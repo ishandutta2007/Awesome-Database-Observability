@@ -63,9 +63,9 @@ Below is a curated table of commercial SaaS and hosted database monitoring platf
 
 ## 🔓 Open-Source GitHub Projects
 
-The open-source database observability ecosystem is production-proven and widely adopted. Below is a comprehensive list of open-source projects, sorted by **GitHub Star Count (descending)**.
+The open-source database observability ecosystem is production-proven and widely adopted. Below is a comprehensive list of open-source projects, sorted by **GitHub Stars_Count (descending)**.
 
-| 📦 Project & Repository | ⭐ Stars | 📜 License | 🎯 Category / Tech | 📝 Description |
+| 📦 Project & Repository | ⭐ GitHub_Stars | 📜 License | 🎯 Category / Tech | 📝 Description |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Netdata](https://github.com/netdata/netdata)** | [<img src="https://img.shields.io/github/stars/netdata/netdata?style=social&color=white" alt="Netdata Stars"/>](https://github.com/netdata/netdata/stargazers) | `GPL-3.0` | Multi-DB / Infrastructure | Real-time, high-resolution database and infrastructure monitoring agent with auto-discovered dashboards for MySQL, Postgres, MongoDB, Redis. |
 | **[VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics)** | [<img src="https://img.shields.io/github/stars/VictoriaMetrics/VictoriaMetrics?style=social&color=white" alt="VictoriaMetrics Stars"/>](https://github.com/VictoriaMetrics/VictoriaMetrics/stargazers) | `Apache-2.0` | Time-Series / Observability | Fast, cost-effective time-series database and monitoring solution frequently used as the storage backbone for database metric exporters. |
@@ -108,7 +108,7 @@ Contributions are warmly welcome! Please follow these simple guidelines:
 
 1. 🍴 **Fork the repo**.
 2. 📝 **Add or update entries** in `README.md` following the tabular format.
-3. ℹ️ **Provide essential details**: Include name, website link, exact pricing / free tier limits, star count (for open source), and concise description.
+3. ℹ️ **Provide essential details**: Include name, website link, exact pricing / free tier limits, Stars_Count (for open source), and concise description.
 4. 🚀 **Submit a Pull Request** with a clear explanation of the addition.
 
 ---
