@@ -1,261 +1,126 @@
-# Awesome-Database-Observability
-
-# Awesome Database Observability
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Database Monitoring, Query Analytics, Performance Insights & Observability*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Database Observability**. These tools help DBAs, SREs, and platform engineers monitor database performance, analyze slow queries, detect anomalies, and correlate database health with application behavior.
-
-
-
-**Examples** include Datadog Database Monitoring, Redgate Monitor, SolarWinds DPA, Database Lab, pganalyze, EverSQL, PlanetScale Insights, Percona Monitoring and Management, dbWatch, Instana, DBmarlin, Quest Foglight, Dynatrace, and New Relic (the category leaders).
-
-
-
-**Open-source emphasis**: Database observability has a **mature and production-proven open-source ecosystem**. **PMM (Percona Monitoring and Management)** is the leading open-source solution for MySQL, PostgreSQL, and MongoDB with Query Analytics and Advisor checks . **pgwatch2** provides comprehensive PostgreSQL monitoring with 200+ metrics and Grafana dashboards . **PgHero** delivers a lightweight, read-only PostgreSQL performance dashboard . **pganalyze collector** is the open-source data collection component of the commercial pganalyze platform, capturing query statistics, schema information, and table metrics . **Coroot** brings eBPF-based observability with automatic query performance insights . **Database Lab Engine** enables thin cloning of multi-terabyte databases for instant troubleshooting . This section documents these production-grade solutions.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Datadog Database Monitoring](https://www.datadoghq.com/product/database-monitoring/)**
-
-  **Cloud-native database monitoring integrated with the Datadog platform.** Provides query-level metrics, execution plans, explain plans, and wait event analysis for PostgreSQL, MySQL, SQL Server, Oracle, and MongoDB. Correlates database performance with application traces and infrastructure metrics.
-
-
-
-- **[Redgate Monitor](https://www.red-gate.com/products/monitor/)**
-
-  **The leading monitoring tool for SQL Server estates.** Provides real-time and historical performance metrics, custom alerts, and automated alerts for backups, security, and capacity. **94% of Fortune 100 companies** use Redgate. Free for one server, with per-server and per-server-per-year options.
-
-
-
-- **[SolarWinds Database Performance Analyzer (DPA)](https://www.solarwinds.com/database-performance-analyzer)**
-
-  **Deep database performance analysis with query-level wait-time monitoring.** Supports Oracle, SQL Server, MySQL, MariaDB, PostgreSQL, and Azure SQL. Provides table and index tuning advice, blocking and deadlock analysis, and historical performance baselines.
-
-
-
-- **[pganalyze](https://pganalyze.com/)**
-
-  **PostgreSQL performance monitoring and optimization platform.** Provides query analysis, index advisor, and automated recommendations. The **collector is open-source** and self-hostable.
-
-
-
-- **[Database Lab](https://postgres.ai/)**
-
-  **PostgreSQL database branching and thin cloning for development and testing.** Enables instant clones of multi-terabyte databases for troubleshooting, CI/CD, and query optimization. **Postgres.ai** provides the managed service.
-
-
-
-- **[EverSQL](https://www.eversql.com/)**
-
-  **AI-powered SQL query optimization.** Automatically analyzes slow queries and provides index and query rewrite recommendations. Supports MySQL, PostgreSQL, and MariaDB.
-
-
-
-- **[PlanetScale Insights](https://planetscale.com/)**
-
-  **MySQL performance monitoring and query insights within PlanetScale.** Provides query analytics, anomaly detection, and performance recommendations for Vitess-based databases.
-
-
-
-- **[dbWatch](https://www.dbwatch.com/)**
-
-  **Enterprise database monitoring for multiple DBMS platforms.** Provides real-time monitoring, automated health checks, and performance reporting.
-
-
-
-- **[Instana Database Monitoring](https://www.instana.com/)**
-
-  **Application performance monitoring with database observability.** Provides automatic discovery and monitoring of databases, query performance analysis, and root cause detection.
-
-
-
-- **[DBmarlin](https://www.dbmarlin.com/)**
-
-  **Database performance monitoring with visual query analysis.** Provides real-time monitoring, historical trend analysis, and database comparison capabilities.
-
-
-
-- **[Quest Foglight](https://www.quest.com/foglight/)**
-
-  **Enterprise database performance monitoring for heterogeneous environments.** Supports Oracle, SQL Server, PostgreSQL, MySQL, Azure SQL, and cloud-native databases. Provides SQL Performance Investigator (SQL PI) for deep query analysis.
-
-
-
-- **[Dynatrace Database Insights](https://www.dynatrace.com/)**
-
-  **Full-stack observability with database performance monitoring.** Provides automatic discovery and monitoring of databases, query performance analysis, and root cause detection.
-
-
-
-- **[New Relic Database Monitoring](https://newrelic.com/)**
-
-  **APM platform with database performance monitoring.** Provides query-level metrics, execution plan analysis, and database-specific dashboards.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Multi-Database Monitoring Platforms
-
-
-
-- **[Percona Monitoring and Management (PMM)](https://github.com/percona/pmm)**
-
-  **The leading open-source database monitoring solution for MySQL, PostgreSQL, MongoDB, and MariaDB.** **AGPL-3.0 licensed**. Built on Prometheus and VictoriaMetrics with Grafana dashboards. **Key features**: **Query Analytics (QAN)** for slow query analysis; **Advisors** for automated best-practice checks; **Alerting** and **Integration** with external systems. Docker and Podman deployment with a web-based UI. **Best for**: Production MySQL/PostgreSQL/MongoDB environments needing a complete monitoring stack .
-
-
-
-- **[pgwatch2](https://github.com/cybertec-postgresql/pgwatch2)**
-
-  **Comprehensive PostgreSQL monitoring with 200+ built-in metrics.** **PostgreSQL license**. Provides **predefined Grafana dashboards**, **preset configurations**, and **automatic metric collection**. Supports multiple monitoring modes including Prometheus, Graphite, and JSON. **Best for**: PostgreSQL-specific monitoring with granular metrics and dashboards.
-
-
-
-- **[Coroot](https://github.com/coroot/coroot)**
-
-  **eBPF-based observability platform with automatic database monitoring.** **Apache-2.0 licensed**. Uses eBPF to collect metrics without instrumentation. Provides **automatic service discovery**, **query performance insights**, and **distributed tracing**. Supports PostgreSQL, MySQL, and MongoDB. **Best for**: Kubernetes and cloud-native environments wanting zero-instrumentation monitoring.
-
-
-
-### PostgreSQL-Specific Monitoring
-
-
-
-- **[pganalyze collector](https://github.com/pganalyze/collector)**
-
-  **The open-source data collection component of the pganalyze platform.** **BSD-3-Clause licensed**. Captures query statistics, schema information, and table metrics from PostgreSQL. Sends data to the pganalyze service for analysis, or can be configured for self-hosted processing. **Best for**: PostgreSQL users wanting pganalyze's query analysis with self-hosted collection.
-
-
-
-- **[PgHero](https://github.com/ankane/pghero)**
-
-  **Lightweight, read-only PostgreSQL performance dashboard.** **MIT licensed**. Provides **query performance analysis**, **index usage statistics**, **table and index bloat detection**, and **connection monitoring**. Web-based UI with no agent required. **Best for**: PostgreSQL users wanting a quick, low-overhead monitoring solution.
-
-
-
-- **[pg_stat_monitor](https://github.com/percona/pg_stat_monitor)**
-
-  **Query performance monitoring extension for PostgreSQL.** **PostgreSQL license**. Provides **aggregated query statistics**, **query execution plans**, **client information**, and **histogram data**. Part of the Percona ecosystem. **Best for**: PostgreSQL users needing advanced query-level monitoring.
-
-
-
-- **[PoWA](https://github.com/powa-team/powa)**
-
-  **PostgreSQL Workload Analyzer.** **PostgreSQL license**. Collects performance statistics from multiple PostgreSQL instances and provides **real-time metrics**, **query analysis**, and **histograms**. Supports **pg_stat_statements** and **pg_qualstats**. **Best for**: PostgreSQL workload analysis and historical performance tracking.
-
-
-
-- **[pgMonitor](https://github.com/CrunchyData/pgmonitor)**
-
-  **Monitoring and alerting for PostgreSQL clusters.** Provides Prometheus exporters, Grafana dashboards, and alerting rules for PostgreSQL, pgBouncer, and Patroni. **Best for**: PostgreSQL clusters needing comprehensive monitoring.
-
-
-
-### MySQL/MariaDB-Specific Monitoring
-
-
-
-- **[MySQLTuner-perl](https://github.com/major/MySQLTuner-perl)**
-
-  **The classic CLI-based MySQL/MariaDB performance analysis script.** **GPL-3.0 licensed**, Perl-based. Analyzes MySQL/MariaDB configuration and performance metrics to provide **tuning recommendations**. Checks **query cache**, **index usage**, **connection settings**, **storage engine configuration**, and more. **Best for**: Quick CLI-based MySQL tuning and configuration review .
-
-
-
-- **[MySQL Performance Schema](https://dev.mysql.com/doc/refman/8.0/en/performance-schema.html)**
-
-  **Built-in MySQL monitoring framework.** Native to MySQL 5.7+ and 8.0. Provides **instrumentation** for server events, **wait statistics**, **statement analysis**, and **connection tracking**. Foundation for many monitoring tools. **Best for**: Native MySQL monitoring without additional agents.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Multi-Database**: **PMM** (MySQL, PostgreSQL, MongoDB), **Coroot** (eBPF-based, Kubernetes-native) .
-
-- **PostgreSQL**: **pganalyze collector** (BSD-3, query stats collection) , **pgwatch2** (200+ metrics), **PgHero** (lightweight dashboard), **pg_stat_monitor** (query stats extension), **PoWA** (workload analyzer) , **pgMonitor** (clusters, Prometheus/Grafana) .
-
-- **MySQL**: **MySQLTuner** (CLI tuning script), **PMM for MySQL** .
-
-- **MongoDB**: **PMM for MongoDB** .
-
-- **Cloud-Native**: **Coroot** (eBPF, zero-instrumentation), **PMM** (Prometheus-based) .
-
-- **AI-Powered**: **EverSQL** (query optimization) .
-
-
-
-**Frameworks for building custom systems**: Combine **PMM** for multi-database monitoring with Query Analytics and Advisors, **pgwatch2** or **PgHero** for PostgreSQL-specific dashboards, **pganalyze collector** for PostgreSQL query statistics collection, **MySQLTuner** for quick CLI-based MySQL tuning, **Coroot** for eBPF-based zero-instrumentation observability in Kubernetes, and **Database Lab** for thin cloning and query troubleshooting. Add **Prometheus** for metrics collection, **Grafana** for visualization, and **Docker** for deployment.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Database observability platforms handle sensitive query and performance data; ensure proper access controls and compliance with security policies.
-
-- **Open-source reality**: The open-source ecosystem for database observability is **mature and production-proven**. **PMM** is the leading open-source solution for MySQL, PostgreSQL, and MongoDB with Query Analytics and Advisors . **pgwatch2** provides 200+ PostgreSQL metrics with Grafana dashboards . **PgHero** offers a lightweight, read-only PostgreSQL dashboard . **pganalyze collector** enables self-hosted collection for the commercial platform's analysis . **Coroot** brings eBPF-based zero-instrumentation monitoring for cloud-native environments . **Database Lab** enables thin cloning of multi-terabyte databases for instant troubleshooting . However, **commercial platforms** (Datadog, Redgate Monitor, SolarWinds DPA, Dynatrace, New Relic) provide **deep query-level wait analysis, automated tuning, cross-database correlation, and enterprise support** that open-source alternatives require additional tooling to match. The open-source path is **genuinely viable** for organizations with strong DBA and observability engineering capacity.
-
-
+# ⚡ Awesome Database Observability
+
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Database Observability Banner" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg" alt="Maintained" />
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" />
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 📊 **Curated List of SaaS Platforms & Open-Source Tools for Database Monitoring, Query Analytics, Performance Insights & Database Health Observability.**  
+> *Last updated: October 2026*
 
 ---
 
+## 💡 Overview & Market Insights
 
+Database observability tools help DBAs, Site Reliability Engineers (SREs), DevOps teams, and platform engineers monitor database health, detect query anomalies, analyze wait events, tune indexes, and correlate database performance with distributed application traces.
 
-**Made for DBAs, platform engineers, SREs, and database performance specialists.**
+### 🌐 Market Analysis & Industry Fragmentation
+> [!NOTE]
+> 📈 **Estimated Market Size & Industry Dynamics:**  
+> The global Database Observability and APM market is estimated at **$5.2 Billion - $6.5 Billion** (2026), growing at a ~16% CAGR driven by cloud-native migration, multi-cloud complexity, and automated query optimization demands. The market is **moderately fragmented**: enterprise platform giants (*Datadog, Dynatrace, New Relic, IBM/Instana*) dominate unified full-stack observability, while specialized database performance leaders (*Redgate, Percona, SolarWinds, pganalyze*) capture deep database-native query analytics and DBA workflows.
 
-Let's make database observability more open, transparent, and observable.
+---
+
+## 📑 Table of Contents
+
+- [☁️ SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [📈 Star History](#-star-history)
+- [🤝 Support & Sponsorship](#-support--sponsorship)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+
+---
+
+## ☁️ SaaS / Hosted Platforms
+
+Below is a curated table of commercial SaaS and hosted database monitoring platforms, sorted by **company scale (valuation / estimated market capitalization / revenue)** in descending order:
+
+| 🏢 Platform / Product | 📏 Scale (Valuation / Revenue) | 💵 Starting Tier Price | 🎁 Free Tier / Trial Limits | 🔍 Core Focus & Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Datadog Database Monitoring](https://www.datadoghq.com/product/database-monitoring/)** | **~$96.5B Market Cap** ($3.97B Annual Revenue) | **$70 / database host / month** | **14-day free trial** with full platform access (Free plan excludes DBM) | Cloud-native DBM providing query-level metrics, execution plans, wait event analysis for Postgres, MySQL, Oracle, MongoDB. |
+| **[Dynatrace Database Insights](https://www.dynatrace.com/)** | **~$16.7B Market Cap** ($2.1B Annual Revenue) | **$0.08 / host-hour** (~$58/month) for Davis AI observability | **15-day free trial** with no credit card required | Full-stack AI-powered observability with automatic database topology discovery, root cause analysis, and query profiling. |
+| **[New Relic Database Monitoring](https://newrelic.com/)** | **~$6.5B Valuation** ($1.0B Revenue) | **$49 / compute unit / month** (Standard tier) | **100 GB/month free forever** data ingest (1 full user free) | APM platform providing database query-level metrics, execution plan analysis, and correlated trace dashboards. |
+| **[SolarWinds Database Performance Analyzer (DPA)](https://www.solarwinds.com/database-performance-analyzer)** | **~$4.4B Valuation** ($797M Revenue) | **$1,195 per database instance** (Perpetual / Annual option) | **14-day free trial** with full feature access | Query-level wait-time monitoring, index tuning recommendations, blocking/deadlock analysis for Oracle, SQL Server, MySQL, Postgres. |
+| **[Instana Database Monitoring (IBM)](https://www.instana.com/)** | **Acquired by IBM** ($2.2B+ IBM Software division segment) | **$75 / host / month** (billed annually) | **14-day free trial** with full automated discovery capabilities | Automated APM and database monitoring providing query performance analysis and real-time distributed tracing. |
+| **[Quest Foglight](https://www.quest.com/foglight/)** | **Est. ~$2.2B Valuation** (~$1.0B Revenue) | **~$1,500 / monitored database instance** | **30-day free trial** for enterprise evaluation | Cross-platform enterprise database performance monitoring with SQL PI (Performance Investigator) for deep wait-time analysis. |
+| **[pganalyze](https://pganalyze.com/)** | **Private / VC-backed** (Est. $10M–$20M ARR) | **$149 / month** (Production plan, 1 server) | **14-day free trial** (Open-source collector available for self-hosting) | Specialized PostgreSQL performance monitoring platform featuring automated index recommendations and query optimization. |
+| **[Redgate Monitor](https://www.red-gate.com/products/monitor/)** | **~$100M ARR** (Private Equity Backed) | **$1,675 / server / year** | **14-day free trial** (Free tier for 1 local server on community edition) | The enterprise monitoring standard for SQL Server estates and PostgreSQL, offering real-time alerts, deadlock analysis, and capacity planning. |
+| **[EverSQL](https://www.eversql.com/)** | **Private** (Bootstrapped / High Growth) | **$125 / year** (Basic paid tier) | **Free tier available** (up to 1 free query optimization request per month) | AI-powered SQL query optimization engine delivering automatic indexing and rewrite recommendations for MySQL & Postgres. |
+| **[DBmarlin](https://www.dbmarlin.com/)** | **Private** (Application Performance Ltd) | **$600 / database instance / year** | **1 free starter license forever** for 1 database instance | Multi-database performance monitoring focusing on database wait events, SQL change tracking, and microsecond-level query analysis. |
+| **[Database Lab (Postgres.ai)](https://postgres.ai/)** | **Private / VC-backed** | **$99 / month** (Standard SaaS control plane) | **14-day free trial** (Engine is open-source for self-hosting) | PostgreSQL database branching and thin cloning enabling instant copy of multi-TB databases for query testing and troubleshooting. |
+| **[PlanetScale Insights](https://planetscale.com/)** | **Private / VC-backed** | **$39 / month** (Scaler plan) | **14-day free trial** on paid plans | Deep MySQL performance monitoring and query insights built directly into the Vitess-based PlanetScale cloud platform. |
+| **[dbWatch](https://www.dbwatch.com/)** | **Private** | **$300 / instance / year** (Control tier) | **30-day free trial** for enterprise monitoring | Enterprise database control center for monitoring and managing large heterogeneous database fleets (Oracle, SQL Server, Postgres, MySQL). |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+The open-source database observability ecosystem is production-proven and widely adopted. Below is a comprehensive list of open-source projects, sorted by **GitHub Star Count (descending)**.
+
+| 📦 Project & Repository | ⭐ Stars | 📜 License | 🎯 Category / Tech | 📝 Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Netdata](https://github.com/netdata/netdata)** | [<img src="https://img.shields.io/github/stars/netdata/netdata?style=social&color=white" alt="Netdata Stars"/>](https://github.com/netdata/netdata/stargazers) | `GPL-3.0` | Multi-DB / Infrastructure | Real-time, high-resolution database and infrastructure monitoring agent with auto-discovered dashboards for MySQL, Postgres, MongoDB, Redis. |
+| **[VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics)** | [<img src="https://img.shields.io/github/stars/VictoriaMetrics/VictoriaMetrics?style=social&color=white" alt="VictoriaMetrics Stars"/>](https://github.com/VictoriaMetrics/VictoriaMetrics/stargazers) | `Apache-2.0` | Time-Series / Observability | Fast, cost-effective time-series database and monitoring solution frequently used as the storage backbone for database metric exporters. |
+| **[MySQLTuner-perl](https://github.com/major/MySQLTuner-perl)** | [<img src="https://img.shields.io/github/stars/major/MySQLTuner-perl?style=social&color=white" alt="MySQLTuner Stars"/>](https://github.com/major/MySQLTuner-perl/stargazers) | `GPL-3.0` | MySQL / MariaDB | The classic CLI-based MySQL performance analysis script. Analyzes memory, query cache, index usage, and provides configuration recommendations. |
+| **[PgHero](https://github.com/ankane/pghero)** | [<img src="https://img.shields.io/github/stars/ankane/pghero?style=social&color=white" alt="PgHero Stars"/>](https://github.com/ankane/pghero/stargazers) | `MIT` | PostgreSQL | Lightweight, read-only PostgreSQL performance dashboard offering query analysis, index bloat detection, and active connection monitoring. |
+| **[Coroot](https://github.com/coroot/coroot)** | [<img src="https://img.shields.io/github/stars/coroot/coroot?style=social&color=white" alt="Coroot Stars"/>](https://github.com/coroot/coroot/stargazers) | `Apache-2.0` | eBPF / Cloud-Native | eBPF-based zero-instrumentation observability platform providing automatic database query performance analysis for Postgres, MySQL, and Redis. |
+| **[Postgres Exporter](https://github.com/prometheus-community/postgres_exporter)** | [<img src="https://img.shields.io/github/stars/prometheus-community/postgres_exporter?style=social&color=white" alt="Postgres Exporter Stars"/>](https://github.com/prometheus-community/postgres_exporter/stargazers) | `Apache-2.0` | PostgreSQL / Prometheus | Official Prometheus exporter for PostgreSQL server metrics, table statistics, lock metrics, and custom query metrics collection. |
+| **[Database Lab Engine](https://github.com/postgres-ai/database-lab-engine)** | [<img src="https://img.shields.io/github/stars/postgres-ai/database-lab-engine?style=social&color=white" alt="Database Lab Stars"/>](https://github.com/postgres-ai/database-lab-engine/stargazers) | `AGPL-3.0` | PostgreSQL / Cloning | Open-source technology for instant thin cloning of multi-terabyte PostgreSQL databases to investigate slow queries and test migrations safely. |
+| **[MySQLd Exporter](https://github.com/prometheus/mysqld_exporter)** | [<img src="https://img.shields.io/github/stars/prometheus/mysqld_exporter?style=social&color=white" alt="MySQLd Exporter Stars"/>](https://github.com/prometheus/mysqld_exporter/stargazers) | `Apache-2.0` | MySQL / Prometheus | Prometheus exporter for MySQL and MariaDB server performance schema metrics, InnoDB status, and slow query log counts. |
+| **[pgwatch2](https://github.com/cybertec-postgresql/pgwatch2)** | [<img src="https://img.shields.io/github/stars/cybertec-postgresql/pgwatch2?style=social&color=white" alt="pgwatch2 Stars"/>](https://github.com/cybertec-postgresql/pgwatch2/stargazers) | `PostgreSQL` | PostgreSQL | Flexible PostgreSQL monitoring tool with 200+ built-in metrics and pre-configured Grafana dashboards for complex database estates. |
+| **[MongoDB Exporter](https://github.com/percona/mongodb_exporter)** | [<img src="https://img.shields.io/github/stars/percona/mongodb_exporter?style=social&color=white" alt="MongoDB Exporter Stars"/>](https://github.com/percona/mongodb_exporter/stargazers) | `Apache-2.0` | MongoDB / Prometheus | Prometheus exporter for MongoDB document database metrics including server status, replica sets, and query stats. |
+| **[Percona Monitoring and Management (PMM)](https://github.com/percona/pmm)** | [<img src="https://img.shields.io/github/stars/percona/pmm?style=social&color=white" alt="PMM Stars"/>](https://github.com/percona/pmm/stargazers) | `AGPL-3.0` | Multi-DB (MySQL/PG/Mongo) | Leading open-source database management platform featuring Query Analytics (QAN), security security advisors, and Grafana integration. |
+| **[PoWA](https://github.com/powa-team/powa)** | [<img src="https://img.shields.io/github/stars/powa-team/powa?style=social&color=white" alt="PoWA Stars"/>](https://github.com/powa-team/powa/stargazers) | `PostgreSQL` | PostgreSQL Workload | PostgreSQL Workload Analyzer gathering performance statistics, query execution charts, and index recommendations via `pg_stat_statements`. |
+| **[pgMonitor](https://github.com/CrunchyData/pgmonitor)** | [<img src="https://img.shields.io/github/stars/CrunchyData/pgmonitor?style=social&color=white" alt="pgMonitor Stars"/>](https://github.com/CrunchyData/pgmonitor/stargazers) | `PostgreSQL` | PostgreSQL / Crunchy | Production-grade monitoring suites combining Prometheus exporters, custom rules, and pre-built Grafana dashboards for Postgres & Patroni. |
+| **[pg_stat_monitor](https://github.com/percona/pg_stat_monitor)** | [<img src="https://img.shields.io/github/stars/percona/pg_stat_monitor?style=social&color=white" alt="pg_stat_monitor Stars"/>](https://github.com/percona/pg_stat_monitor/stargazers) | `PostgreSQL` | PostgreSQL Extension | Query performance monitoring extension for PostgreSQL collecting aggregated query stats, query execution plans, and histogram metrics. |
+| **[pganalyze Collector](https://github.com/pganalyze/collector)** | [<img src="https://img.shields.io/github/stars/pganalyze/collector?style=social&color=white" alt="pganalyze Collector Stars"/>](https://github.com/pganalyze/collector/stargazers) | `BSD-3-Clause` | PostgreSQL Data Collector | Open-source data collection daemon capturing query statistics, schema metadata, and table metrics for PostgreSQL instances. |
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Database-Observability&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Database-Observability&type=date&legend=top-left)
+
+---
+
+## 🤝 Support & Sponsorship
+
+Thank you for visiting **Awesome Database Observability**! 💖  
+If you find this list helpful for your database engineering, DBA, or SRE work, please consider supporting the project:
+
+- 🌟 **Star this repository** to help others discover it.
+- 🔀 **Fork and share** it with your colleagues and database community.
+- ☕ **Buy me a coffee**: Support ongoing updates and open-source contributions via the [Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcome! Please follow these simple guidelines:
+
+1. 🍴 **Fork the repo**.
+2. 📝 **Add or update entries** in `README.md` following the tabular format.
+3. ℹ️ **Provide essential details**: Include name, website link, exact pricing / free tier limits, star count (for open source), and concise description.
+4. 🚀 **Submit a Pull Request** with a clear explanation of the addition.
+
+---
+
+## ⚠️ Disclaimer
+
+- This directory is a **community-curated list** — presented for informational purposes only.
+- Database observability tools process sensitive query strings and connection telemetry; ensure strict compliance with your organization's data privacy and security policies.
+- Commercial trademarks and product names belong to their respective owners.
+
+---
+
+<p align="center">
+  <b>Made with ❤️ for DBAs, Platform Engineers, SREs, and Database Performance Specialists worldwide.</b>
+</p>
